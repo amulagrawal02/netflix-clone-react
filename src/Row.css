@@ -1,14 +1,30 @@
 .row__poster {
   object-fit: contain;
   width: 10rem;
-  max-height: 100%;
+  max-height: 100px;
   margin-right: 1rem;
+  padding-top: 2rem;
+  transition: transform 450ms;
 }
 .row__posters {
   display: flex;
   overflow-y: scroll;
 }
-
+.row {
+  margin: 1rem;
+  margin-left: 1.3rem;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+}
 .row__posters::-webkit-scrollbar {
   display: none;
+}
+
+.row__posterLarge {
+  max-height: 300px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
 }
