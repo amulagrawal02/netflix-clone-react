@@ -1,0 +1,23 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+.nav-black {
+  background-color: #111;
+}
+.logo {
+  width: 9.75rem;
+  height: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+.profile {
+  width: 2rem;
+  height: 2rem;
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+}

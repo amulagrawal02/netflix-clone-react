@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import requests from "./requests";
 import "./Banner.css";
+import Nav from "./Nav.js";
 const baseURL = "https://image.tmdb.org/t/p/original";
 
 function Banner() {
@@ -29,6 +30,9 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
+      <div>
+        <Nav />
+      </div>
       <div className="banner__contents">
         <h1 className="banner__title">
           {movie?.title || movie?.name || movie?.original_title}
